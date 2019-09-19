@@ -6,17 +6,13 @@
  */
 int main(void)
 {
+int a='a';
+int z='z';
 
-int a = 97;
-while (a < 123)
+for ( ;a <= z; a++ )
 {
-if (a == 101 || a == 113)
-{
-a++;
-}
 putchar(a);
-a++;
 }
-putchar('\n');
+putchar("\n");
 return (0);
 }
