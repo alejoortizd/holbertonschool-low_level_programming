@@ -7,18 +7,10 @@
 int main(void)
 {
 
-int a = 96;
-int b = 64;
-while (a < 122)
-{
-a++;
-putchar(a);
-}
-while ( b < 90)
-{
-b++;
-putchar(b);
-}
-putchar('\n');
+int a;
+
+for (a = 0; a < 10; a++)
+	printf ("%i",a);
+printf ("\n");
 return (0);
 }

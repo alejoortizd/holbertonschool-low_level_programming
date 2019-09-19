@@ -7,16 +7,10 @@
 int main(void)
 {
 
-int a = 96;
-while (a < 122)
-{
-if (a == 101 || a == 113)
-{
-a++;
-}
-putchar(a);
-a++;
-}
-putchar('\n');
+int a;
+
+for (a = 0; a < 10; a++)
+	printf("%i", a);
+printf("\n");
 return (0);
 }
