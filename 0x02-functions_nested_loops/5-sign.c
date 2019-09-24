@@ -1,11 +1,10 @@
 #include "holberton.h"
 /**
- * print_sign(int n) - checks for integer
+ * print_sign - Entry point
  *
- * @n: parametre to check
+ * @n: parametre to check!
  *
- * Return: 1 or 0.
- *
+ * Return: Always 0 (Success)
  */
 int print_sign(int n)
 {
