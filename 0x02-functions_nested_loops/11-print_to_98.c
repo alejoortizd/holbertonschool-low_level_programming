@@ -1,0 +1,36 @@
+#include "holberton.h"
+#include <stdio.h>
+/**
+ * print_to_98 - Entry point
+ *
+ * Description: print_to_98 c to number 98
+ * @n: parametre to check
+ * Return: a void
+ *
+ */
+void print_to_98(int n)
+{
+	int c = n;
+
+	if (n > 98 && n != 98)
+	{
+		for ( ; c >= 98; c--)
+		{
+			printf("%d", c);
+			if (c != 98)
+				printf(", ");
+		}
+	}
+	else if (n < 98)
+	{
+		for ( ; c <= 98; c++)
+		{
+			printf("%d", c);
+			if (c != 98)
+				printf(", ");
+		}
+	}
+	else
+		printf("%d", c);
+	printf("\n");
+}
