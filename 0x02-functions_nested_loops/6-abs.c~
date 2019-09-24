@@ -1,0 +1,16 @@
+#include "holberton.h"
+/**
+ * _abs(int i) - Entry point
+ *
+ * @i: parametre to check
+ *
+ * Return: Always i (Success)
+ */
+int _abs(int i)
+{
+	if (i > 0)
+		return (i);
+	else
+		i = i * -1;
+	return (i);
+}
