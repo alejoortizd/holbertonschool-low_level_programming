@@ -1,9 +1,0 @@
-#include "holberton.h"
-
-int main(void)
-{
-	_putchar ('H');
-	_putchar ('o');
-
-return (0);
-}
