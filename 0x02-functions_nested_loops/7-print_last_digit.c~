@@ -1,0 +1,21 @@
+#include "holberton.h"
+/**
+ * print_last_digit - Entry point
+ *
+ * @i: parametre to check.
+ *
+ * Return: Always 0 (Success)
+ */
+int print_last_digit(int i)
+{
+	int n = i % 10;
+
+	if (n > 0)
+		_putchar(n + 48);
+	else
+	{
+		n = n * -1;
+		_putchar(n + 48);
+	}
+	return (i);
+}
