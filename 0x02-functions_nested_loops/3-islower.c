@@ -3,7 +3,7 @@
  * _islower - check the code for Holberton School students.
  *
  * @c: parametre to check!
- * Return: Always 0.
+ * Return: 0 or 1.
  */
 int _islower(int c)
 {
@@ -11,4 +11,5 @@ int _islower(int c)
 		return (1);
 	else
 		return (0);
+	_putchar('\n');
 }
