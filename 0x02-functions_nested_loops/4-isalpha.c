@@ -1,8 +1,6 @@
 #include "holberton.h"
-#include <ctype.h>
-
 /**
- * main - check the code for Holberton School students.
+ * _isalpha - check the code for Holberton School students.
  *
  * @c: is a parametre to check
  *
@@ -10,7 +8,7 @@
  */
 int _isalpha(int c)
 {
-	if (isalpha(c) == 0)
+	if (c == 0)
 		return (0);
 	else
 		return (1);
