@@ -1,0 +1,17 @@
+#include "holberton.h"
+/**
+ * _isupper - check is the parametre is upper
+ *
+ * Description: funtion that return 1 is c is upper
+ *
+ * @c: parametr to check
+ *
+ * Return: is is upper return 1 if not 0
+ */
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
+}
