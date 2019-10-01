@@ -1,0 +1,19 @@
+#include "holberton.h"
+/**
+ * puts2 - entry point
+ * Description: function that prints all odd
+ *
+ * Return: always void
+ */
+void puts2(char *str)
+{
+	int a;
+
+	for (a = 0; str[a] != 0; a++)
+	{
+		if ((str[a] % 2) == 0)
+			_putchar(a + '0');
+		else
+			a++;
+	}
+}
