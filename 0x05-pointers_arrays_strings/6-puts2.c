@@ -2,7 +2,7 @@
 /**
  * puts2 - entry point
  * Description: function that prints all odd
- *
+ * @str: parametre to check
  * Return: always void
  */
 void puts2(char *str)
