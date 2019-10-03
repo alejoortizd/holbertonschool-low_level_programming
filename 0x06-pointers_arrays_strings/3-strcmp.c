@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
- * _strncpy - Entry point
+ * _strcmp - Entry point
  * Description: function that cancatenates two strings
- * @dest: parametre to check
- * @src: parametre to check
- * @n: parametre to check
- * Return: always dest
+ * @s1: parametre to check
+ * @s2: parametre to check
+ *
+ * Return: always w
  */
 int _strcmp(char *s1, char *s2)
 {
