@@ -2,9 +2,10 @@
 #include "holberton.h"
 /**
  * print_diagsums - Entry point
- * Description: Function that return the chessboard
+ * Description: Function that return the diagnsum
+ * @size: parametre to check
  * @a: parametre to check
- * Return: unsigned
+ * Return: printf
  */
 void print_diagsums(int *a, int size)
 {
