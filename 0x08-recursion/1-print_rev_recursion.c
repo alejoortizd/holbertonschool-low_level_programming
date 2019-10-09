@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * print_rev_recursion.c - Entry point
+ * _print_rev_recursion - Entry point
  * Description: Function that return the rev string
  * @s: String to check
- * @return: rev string
+ * return: rev string
  */
 void _print_rev_recursion(char *s)
 {
