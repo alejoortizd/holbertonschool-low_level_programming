@@ -1,10 +1,9 @@
 #include "holberton.h"
 /**
  * is_prime_number - Entry point
- * Description: Function that return the value of X raised Y
- * @x: Parametre to raise
- * @y: parametre to check
- * Return: a number raise Y times
+ * Description: Function that check is a number is prime
+ * @n: Parametre to raise
+ * Return: check
  */
 int is_prime_number(int n)
 {
@@ -14,7 +13,8 @@ int is_prime_number(int n)
  * check - function that check is the n number is prime
  * Description: function that make a check
  * @i: parametre to validate is the n number is prime
- * return: 0 if it isnt prime and 1 if its prime
+ * @n: parametre to check
+ * Return: 0 if it isnt prime and 1 if its prime
  */
 int check(int n, int i)
 {
