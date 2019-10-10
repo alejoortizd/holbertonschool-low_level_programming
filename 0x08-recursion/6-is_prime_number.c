@@ -1,4 +1,5 @@
 #include "holberton.h"
+int check(int n, int i);
 /**
  * is_prime_number - Entry point
  * Description: Function that check is a number is prime
