@@ -16,17 +16,17 @@ int is_palindrome(char *s)
 /**
  * c - Entry point
  * Description: Copy the values
- * @a: Is the parameter to be checked
+ * @i: Is the parameter to be checked
  * Return: Always (j)
  */
 int c(char *i)
 {
 	int j = 0;
 
-	if (*a != '\0')
+	if (*i != '\0')
 	{
 		j++;
-		j = j + c(a + 1);
+		j = j + c(i + 1);
 	}
 	return (j);
 }
@@ -44,7 +44,7 @@ int check(char *i, int j)
 	{
 		if (*i == i[j - 1])
 		{
-			return (check(a + 1, k - 2));
+			return (check(i + 1, j - 2));
 		}
 		else
 			return (0);
