@@ -1,7 +1,6 @@
 #include "holberton.h"
-#include <stdio.h>
-int cou(char *a);
-int rec(char *a, int k);
+int c(char *i);
+int check(char *i, int j);
 /**
  * is_palindrome - Entry point
  * Description: return 1 is is palindrome
