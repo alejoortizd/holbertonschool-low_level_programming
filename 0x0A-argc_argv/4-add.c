@@ -2,11 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
 /**
  * isnumber - Entry Point
- *
- * @number: parametre to check
+ * @number: number to check
  * Return: 1 if number else 0
  */
 int isnumber(char *number)
@@ -14,7 +12,7 @@ int isnumber(char *number)
 	int i;
 
 	i = 0;
-	for ( ;number[i] != '\0'; i++)
+	while (number[i] != '\0')
 	{
 		if (isdigit(number[i]))
 			i++;
@@ -25,27 +23,27 @@ int isnumber(char *number)
 }
 
 /**
- * main - Entry Point
- * @argv: arguments
- * @argc: number of arguments
- * Return: always zero
+ * main - prints number of arguments given to program
+ * @argv: Parametre to check
+ * @argc: Parametre to check
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int j, i;
+	int r, i;
 
-	j = 0;
+	results = 0;
 	if (argc < 3)
 	{
 		printf("0\n");
 		return (1);
 	}
 	i = 1;
-	for ( ;i < argc; i++)
+	while (i < argc)
 	{
 		if (isnumber(argv[i]))
 		{
-			j += atoi(argv[i]);
+			r += atoi(argv[i]);
 		}
 		else
 		{
@@ -54,6 +52,6 @@ int main(int argc, char *argv[])
 		}
 		i++;
 	}
-	printf("%d\n", j);
+	printf("%d\n", r);
 	return (0);
 }
