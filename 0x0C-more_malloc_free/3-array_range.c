@@ -1,4 +1,4 @@
-#include "holberton.c"
+#include "holberton.h"
 #include <stdlib.h>
 /**
  * array_range - Entry point
