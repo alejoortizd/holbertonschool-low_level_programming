@@ -8,13 +8,13 @@ char *_strcpy(char *dest, char *src);
  * @name: Parametre to check
  * @age: Parametre to check
  * @owner: Parametre to check
- * Return: a dog
+ * Return: Nothing
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newd;
 
-	newd = malloc(sizeof(dog_h));
+	newd = malloc(sizeof(dog_t));
 	if (newd == NULL)
 		return (NULL);
 	newd->name = malloc((_strlen(name) + 1) * sizeof(char));
@@ -28,14 +28,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newd);
 		return (NULL);
 	}
-	newd->owner = _strcpy(nd->owner, owner);
+	newd->owner = _strcpy(newd->owner, owner);
 	newd->age = age;
 	return (newd);
 }
 /**
- * _strlen - check code
- * @s: pointer to check.
- * Return: the lenght
+ * _strlen - Entry Point
+ * @s: Parametre to check
+ * Return: lenght
  */
 int _strlen(char *s)
 {
@@ -46,13 +46,13 @@ int _strlen(char *s)
 	}
 	return (i);
 }
-/**
- * *_strcpy - Entry point
- * @src: pointer to check.
- * @dest: pointer to check
- * Return: value
- */
 
+/**
+ * _strcpy - Entry Point
+ * @src: Parametre to check
+ * @dest: Parametre to check
+ * Return: valeu the pointer to dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
