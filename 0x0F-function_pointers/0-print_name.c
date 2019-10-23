@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * print-name - Entry point
+ * print_name - Entry point
  * Description: function that return name
  * @name: parametre to check
  * @f: parametre to check
