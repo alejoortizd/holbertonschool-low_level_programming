@@ -3,26 +3,23 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * sum_them_all - Entry point
- *
- * Description: write a function that returns the sum of all its parameters
- * @n: Is the parameter to be checked
- * Return: Always 0 (Success)
+ * sum_them_all - function
+ * @n: int parameters to sum
+ * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list va;
-	int sum = 0;
-	unsigned int i;
+	va_list valist;
+	unsigned int sum, i;
 
-	if (n == 0)
-		return (0);
+	sum = 0;
 
-	va_start(va, n);
+	va_start(valist, n);
+
 	for (i = 0; i < n; i++)
-	{
-		sum += va_arg(va, int);
-	}
-	va_end(va);
+		sum += va_arg(valist, int);
+
+	va_end(valist);
+
 	return (sum);
 }
