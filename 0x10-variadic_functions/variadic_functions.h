@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #ifndef _SUM_
 #define _SUM_
 int _putchar(char *);
