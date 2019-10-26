@@ -3,10 +3,10 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- *
- *
- *
- *
+ * sum_them_all - Entry Point
+ * Description: function that sum
+ * @n: parametre to check
+ * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
 {

@@ -3,10 +3,11 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- *
- *
- *
- *
+ * print_numbers - Entry Point
+ * Description: paramatre thar print numbers
+ * @separator: parametre to check
+ * @n: parametre to check
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {

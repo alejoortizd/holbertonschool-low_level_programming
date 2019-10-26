@@ -3,10 +3,11 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- *
- *
- *
- *
+ * print_strings - Entry point
+ * Description: function thar print a string
+ * @separator: parametre to check
+ * @n: parametre to check
+ * Return: void
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -14,7 +15,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 
 	va_start(valist, n);
-	va_copy (v1, valist);
+	va_copy(v1, valist);
 
 	for (i = 0; i < n; i++)
 	{
