@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- * p_char - Entry Point
+ * p_str - Entry Point
  * @valist: parametre to check
  * Return: void
  */
