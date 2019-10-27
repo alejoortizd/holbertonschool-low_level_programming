@@ -9,9 +9,9 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 /**
- *
- *
- *
+ * struc fun - Entry Point
+ * @op: parametre to check
+ * @f: parametre to check
  */
 typedef struct fun
 {
