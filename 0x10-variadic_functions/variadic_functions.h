@@ -16,6 +16,6 @@ void print_all(const char * const format, ...);
 typedef struct fun
 {
 	char *op;
-	void(*f)(va_list);
+	void (*f)(va_list);
 } fun_t;
 #endif
