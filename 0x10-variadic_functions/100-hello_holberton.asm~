@@ -1,0 +1,8 @@
+	mov rsi,msg		      ;
+	mov rdx,l		      ;
+	syscall			      ;
+
+	mov rax,60		;
+	mov rdi,0		;
+	syscall			;
+end:
