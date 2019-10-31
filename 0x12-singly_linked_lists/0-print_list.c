@@ -1,4 +1,10 @@
 #include "lists.h"
+/**
+ * print_list - Entry Point
+ * Description: Function that print all the elements
+ * @h: Parametre to check
+ * Return: number of nodes
+ */
 size_t print_list(const list_t *h)
 {
 	size_t i = 0;
