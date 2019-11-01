@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * list_len - Entry Point
- * Description: Function that returns the number of elements in a linked list
- * @h: Parametre to check
+ * add_node - Entry Point
+ * Description: Function that add a new node
+ * @head: Parameter to check
+ * @str: parameter to check
  * Return: number of nodes
  */
 list_t *add_node(list_t **head, const char *str)
@@ -11,12 +12,12 @@ list_t *add_node(list_t **head, const char *str)
 	unsigned int i = 0;
 
 	t = malloc(sizeof(list_t));
-	t->str = strdup(str);
 	if (t == NULL)
 	{
 		free(t);
 		return (NULL);
 	}
+	t->str = strdup(str);
 	while (str[i] != '\0')
 	{
 		i++;
