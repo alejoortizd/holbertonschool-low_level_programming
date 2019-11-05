@@ -1,17 +1,22 @@
 #include "lists.h"
 /**
- * listint_len - entry point
- * @h: parametre to check
+ * add_nodeint - entry point
+ * @head: parametre to check
+ * @n: parametre to check
  * Return: number of nodes
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	size_t i = 0;
+	listint_t *t;
 
-	while (h != NULL)
+	t = malloc(sizeof(listint_t));
+	if (t == NULL)
 	{
-		h = h->next;
-		i++;
+		free(t);
+		return (NULL);
 	}
-	return (i);
+	t->n = n;
+	t->next = *head;
+	*head = t;
+	return (t);
 }
