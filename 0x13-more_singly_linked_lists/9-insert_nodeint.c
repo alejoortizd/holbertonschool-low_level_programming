@@ -6,32 +6,32 @@
  * @n: parameter to check
  * Return: number of nodes
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *t, *copy;
-	unsigned int i = 0;
+	listint_t *new, *headcopy;
+	unsigned int i;
 
-	copy = *head;
-	t = malloc(sizeof(listint_t));
-	if (t = NULL)
+	headcopy = *head;
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
 		return (NULL);
-	t->next = n;
+	new->n = n;
 	if (idx == 0)
 	{
-		t->next = copy;
-		*head = t;
-		return (t);
+		new->next = headcopy;
+		*head = new;
+		return (new);
 	}
-	while (i < idx - 1)
+
+	for (i = 0; (i < idx - 1); i++)
 	{
-		if (copy == NULL)
+		if (headcopy == NULL)
 		{
-			free(t);
+			free(new);
 			return (NULL);
 		}
-		t->next = copy->next;
-		copy->next = t;
-		return (t);
-		i++;
+		headcopy = headcopy->next;
 	}
+	new->next = headcopy->next;
+	headcopy->next = new;
+	return (new);
 }
