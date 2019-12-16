@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * insert_dnodeint_at_index - entry point
- * @head: parameter to check
+ * @h: parameter to check
  * @idx: parameter to check
  * @n: parameter to check
  * Return: new node
