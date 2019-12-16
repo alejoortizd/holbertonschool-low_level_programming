@@ -1,36 +1,36 @@
 #include "lists.h"
 /**
- * insert_dnodeint_at_index - entry point
- * @head: parameter to check
- * @idx: parameter to check
- * Return: list
+ * delete_dnodeint_at_index - entry point
+ * @head: parameter to checked
+ * @index: parameter to checked
+ * Return: 1 is succeedded, -1 if it failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *new, *headcopy;
-	unsigned int i;
+	dlistint_t *t;
+	dlistint_t *n;
 
-	headcopy = *head;
-	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
+	if (*head == NULL)
 		return (-1);
+	t = *head;
 	if (index == 0)
 	{
-		new->next = headcopy;
-		*head = new;
-		return (1);
+		t = t->next;
+		free(*head);
+		*head = t;
 	}
-
-	for (i = 0; (i < index - 1); i++)
+	else
 	{
-		if (headcopy == NULL)
+		for (; index - 1 > 0; index--)
 		{
-			free(new);
-			return (-1);
+			if (t->next == NULL)
+				return (-1);
+			t = t->next;
 		}
-		headcopy = headcopy->next;
+		n = t;
+		n = n->next->next;
+		free(t->next);
+		t->next = n;
 	}
-	new->next = headcopy->next;
-	headcopy->next = new;
 	return (1);
 }
