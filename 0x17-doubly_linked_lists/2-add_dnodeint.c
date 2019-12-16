@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * add_nodeint_end - entry point
+ * add_dnodeint - entry point
  * @head: parametre to check
  * @n: parametre to check
- * Return: number of nodes
+ * Return: head
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
@@ -11,8 +11,13 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	if (head == NULL)
 		return (NULL);
+
 	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
+		return (NULL);
+
 	new->n = n;
+
 	if (*head == NULL)
 	{
 		new->next = NULL;
@@ -20,7 +25,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		*head = new;
 	} else
 	{
-		while ((*head)->prev !=NULL)
+		while ((*head)->prev != NULL)
 			(*head) = (*head)->prev;
 		(*head)->prev = new;
 		new->next = *head;
