@@ -11,27 +11,26 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	unsigned int i;
 
 	headcopy = *head;
-	new = malloc(sizeof(listint_t));
+	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
-		return (NULL);
-	new->n = n;
-	if (idx == 0)
+		return (-1);
+	if (index == 0)
 	{
 		new->next = headcopy;
 		*head = new;
-		return (new);
+		return (1);
 	}
 
-	for (i = 0; (i < idx - 1); i++)
+	for (i = 0; (i < index - 1); i++)
 	{
 		if (headcopy == NULL)
 		{
 			free(new);
-			return (NULL);
+			return (-1);
 		}
 		headcopy = headcopy->next;
 	}
 	new->next = headcopy->next;
 	headcopy->next = new;
-	return (new);
+	return (1);
 }
