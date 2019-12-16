@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - entry point
+ * get_dnodeint_at_index - entry point
  * @head: parameter to check
  * @index: parameter to check
  * Return: number of nodes
