@@ -1,2 +1,26 @@
 # Low Level Programming & Algorithms
-https://camo.githubusercontent.com/4926d8096b8a708f787f0156daa11f52cf9876b3/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d6c6f775f6c6576656c5f70726f6772616d6d696e672f3231322f63697366756e2e6a7067
+## Welcome
+_In this repository the majority of the code was written in C_
+## Table of contents
+* About(#About)
+* Requirements(#Requirements)
+* Projects(#Projects)
+## About
+This repository contains projects on the C programming language. The projects cover:
+* Compilation
+* Commenting code and following a coding style standard
+* Variables, types, operators, expressions, loops, nested loops
+* Conditional statements
+* Functions
+* Pre-processor, macros, header files, pointers, double pointers, function pointers, pointer arithmetic
+* Arrays, multidimensional arrays, structures
+* Static and dynamic libraries
+* Program arguments
+* Dynamic allocation
+* Virtual memory, heap, stack
+* Binary operations
+* Makefiles
+* Sorting and search algorithms!
+## Requirements
+* Ubuntu 14.04 LTS
+* gcc 4.8.4 (-Wall, -Werror, -Wextra, and -pedantic flags)
