@@ -21,7 +21,8 @@ This repository contains projects on the C programming language. The projects co
 * Binary operations
 * Makefiles
 * Sorting and search algorithms!
-[back to table of contents](#table-of-contents)
+* [back to table of contents](#table-of-contents)
 ## Requirements
 * Ubuntu 14.04 LTS
 * gcc 4.8.4 (-Wall, -Werror, -Wextra, and -pedantic flags)
+* [back to table of contents](#table-of-contents)
