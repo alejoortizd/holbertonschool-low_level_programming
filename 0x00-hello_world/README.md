@@ -2,9 +2,9 @@
 ## Welcome
 _In this repository the majority of the code was written in C_
 ## Table of contents
-* About(#About)
-* Requirements(#Requirements)
-* Projects(#Projects)
+* About (#About)
+* Requirements (#Requirements)
+* Projects (#Projects)
 ## About
 This repository contains projects on the C programming language. The projects cover:
 * Compilation
