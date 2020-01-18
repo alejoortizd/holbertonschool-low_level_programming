@@ -1,28 +1,30 @@
-# Low Level Programming & Algorithms
-## Welcome
-_In this repository the majority of the code was written in C_
-## Table of contents
-* [About](#About)
-* [Requirements](#Requirements)
-* [Projects](#Projects)
+# 0x00. C - Hello, World
 ## About
-This repository contains projects on the C programming language. The projects cover:
-* Compilation
-* Commenting code and following a coding style standard
-* Variables, types, operators, expressions, loops, nested loops
-* Conditional statements
-* Functions
-* Pre-processor, macros, header files, pointers, double pointers, function pointers, pointer arithmetic
-* Arrays, multidimensional arrays, structures
-* Static and dynamic libraries
-* Program arguments
-* Dynamic allocation
-* Virtual memory, heap, stack
-* Binary operations
-* Makefiles
-* Sorting and search algorithms!
-* [back to table of contents](#table-of-contents)
+An introductory project on:
+- What is `main`
+- How to print text using `printf`, `puts` and `putchar`
+- How to get the size of a specific type using the unary operator `sizeof`
+- How to compile using `gcc`
 ## Requirements
-* Ubuntu 14.04 LTS
-* gcc 4.8.4 (-Wall, -Werror, -Wextra, and -pedantic flags)
-* [back to table of contents](#table-of-contents)
+- Ubuntu 14.04 LTS
+- gcc 4.8.4
+## File Descriptions
+### Mandatory
+**[0-preprocessor](0-preprocessor)** - a bash script that runs a C file, saved in the variable `$CFILE`, through the preprocessor and saves the result into another file, named `c`
+
+**[1-compiler](1-compiler)** - a bash script that compiles a C file, saved in the variable `$CFILE`, but does not link. The output file will be named the same as the C file, but with the extension `.o` instead of `.c`
+
+**[2-assembler](2-assembler)** - a bash script that generates the assembly code of a C file, saved in the variable `$CFILE`. The output file will be named the same as the C file, but with the extension `.s` instead of `.c`.
+
+**[3-name](3-name)** - a script that compiles a C file, saved in the variable `$CFILE`, and creates an executable named `cisfun`.
+
+**[4-puts.c](4-puts.c)** - a C program that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line using the function `puts`.
+
+**[5-printf.c](5-printf.c)** - a C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line using the function `printf`.
+
+**[6-size.c](6-size.c)** - a C program that prints the size of various types on the computer it is compiled and run on.
+
+### Advanced
+**[100-intel](100-intel)** - a bash script that generates the assembly code (Intel syntax) of a C file, saved in the variable `$CFILE`. The output file will be named the same as the C file, but with the extension `.s` instead of `.c`.
+
+**[101-quote.c](101-quote.c)** - a C program that prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error without using any functions listed in the `NAME` section of `man (3) printf` or `man (3) puts`.
