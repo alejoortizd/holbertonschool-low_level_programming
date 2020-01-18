@@ -1,10 +1,11 @@
 #include "hash_tables.h"
 /**
- * hash_djb2 - Entry Point
- * @str: parameter to check
- * Return: hash
+ * key_index - Entry Point
+ * @size: parameter to check
+ * key: parameter to check
+ * Return: the key of index
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-    return (hash_djb2(key) % size);
+	return (hash_djb2(key) % size);
 }
