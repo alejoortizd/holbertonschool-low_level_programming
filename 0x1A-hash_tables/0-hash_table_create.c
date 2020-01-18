@@ -1,5 +1,9 @@
 #include "hash_fun.h"
-
+/**
+ * hash_table_create - Entry Point
+ * @size: parameter to check
+ * Return: n_hash_table
+ */
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *n_hash_table;
@@ -17,5 +21,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 	for (i = 0; i < size; i++)
 		n_hash_table->array[i] = NULL;
-	return n_hash_table;
+	return (n_hash_table);
 }
