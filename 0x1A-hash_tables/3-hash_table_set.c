@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * create_hnode - Entry Point
+ * create_node - Entry Point
  * @key: parameter to check
  * @value: parameter to check
  * Return: the new node
