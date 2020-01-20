@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * hash_table_print - Entry Point
+ * hash_table_delete - Entry Point
  * @ht: parameter to check
  * Return: the table
  */
