@@ -5,7 +5,7 @@
  * @ht: parameter to check
  * Return: the table
  */
-void hash_table_print(const hash_table_t *ht);
+void hash_table_print(const hash_table_t *ht)
 {
     unsigned long int i;
     hash_node_t *tmp;
@@ -22,7 +22,7 @@ void hash_table_print(const hash_table_t *ht);
             if (sentinel == 1)
                 printf(", ");
             printf("'%s': '%s'", tmp->key, tmp->value);
-            flag = 1;
+            sentinel = 1;
             tmp = tmp->next;
         }
     }
