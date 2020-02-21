@@ -4,11 +4,16 @@ OBJ = $(SRC:.c=.o)
 NAME = holberton
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pendactic
+
 all: $(OBJ)
 	$(CC) $(CFLAGA) $(OBJ) -o $(NAME)
+
 clean:
 	$(RM) *~ $(NAME)
+
 oclean:
 	$(RM) $(OBJ)
+
 fclean: clean oclean
+
 re: oclean all
