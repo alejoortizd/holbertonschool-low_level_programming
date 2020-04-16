@@ -4,6 +4,7 @@
  * @array: parameter to be check
  * @size: parameter to be check
  * @value: parameter to be check
+ * Description: function that find a value if exists
  * Return: a value
  */
 
