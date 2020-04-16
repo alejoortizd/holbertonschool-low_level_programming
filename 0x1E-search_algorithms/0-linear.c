@@ -1,10 +1,11 @@
 #include "search_algos.h"
+
 /**
- * linear_search: entry point
+ * linear_search - entry point
  * @array: parameter to be check
  * @size: parameter to be check
  * @value: parameter to be check
- * Description: function that find a value if exists
+ * Description: Write a function that searches for a value in an array
  * Return: a value
  */
 
